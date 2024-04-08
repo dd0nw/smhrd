@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 입력 양식 지정 form 태그 -->
+    <!-- action : form태그 안에 있는 데이터들을 전달하는 url지정
+        method : 통신방식(get, post) -> 적지 않으면 기본값인 get방식 적용 -->
+
+    <form action="#" method="post">
+        ID : <input type="text"  placeholder="아이디 입력" value="김민수" maxlength="10" autofocus>
+        <!-- 
+            type = "text" : 데이터를 입력할 수 있는 태그
+            1) placeholder : 미리보기 텍스트를 지정
+            2) value : 기본값 지정
+            3) maxlength : 최대 글자수 제한
+            4) autofocus : 자동 커서 설정(값 안넣기)
+            5) readonly : 읽기전용 설정(값 안넣기)
+         -->
+
+         <br>
+         <!-- 비밀번호를 입력할 수 있는 태그 -->
+         PW : <input type="password" name="pw" >
+         <br>
+         <!-- 파일 업로드 태그 -->
+        <input type="file">
+        <br>
+         <!-- 색깔 태그 -->
+         <input type="color">
+         <br>
+         <!-- 년, 월, 일, 시간 선택 태그 -->
+         <input type="datetime-local">
+         <br>
+         <!-- 년, 월, 일 선택 태그 -->
+         <input type="date">
+         <br>
+         <!-- 중복 선택이 가능할때 사용하는 태그 -->
+         DB <input type="checkbox" name="subject" value="DB">
+         python <input type="checkbox" name="subject" value="python">
+         HTML <input type="checkbox" name="subject" value="HTML">
+         <br>
+         <!-- 하나만 선택이 가능할 때 사용하는 태그 -->
+         남자 <input type="radio" name="gender" value="male">
+         여자 <input type="radio" name="gender" value="female">
+         <!-- 
+            radio 버튼을 사용할 때는 중복으로 선택되는것을 방지하기 위해 
+            name attribute를 지정해야한다
+            동일한 name값을 지정해주면 중복선택을 방지한다
+        -->
+        <br>
+
+        <!-- 숫자를 입력하는 태그 -->
+        <input type="number">
+        <br>
+        <!-- 리스트 형태로 데이터를 출력해주는 태그들
+            1) select 태그
+            2) datalist 태그
+    
+        -->
+        통신사 선택
+        <!-- 
+            데이터가 넘어가는 형식
+            name에 지정된 이름으로 value 속성의 값이 전송
+            ex) phone 이름으로 kt라는 값이 전송
+         -->
+        <select name="Phone">
+            <option value="skt">SKT</option>
+            <option value="kt">KT</option>
+            <option value="lg">LG U+</option>
+        </select>
+
+        <br>
+        좋아하는 노래
+        <input type="text" list="music">
+        <!-- input 태그에서 사용할 요소를 미리 정의 -->
+        <datalist id="music">
+            <option value="easy"></option>
+            <option value="홀씨"></option>
+            <option value="삐삐"></option>
+        </datalist>
+        <br>
+        게시글 작성 <br>
+        <textarea name="board" cols="15" rows="5" style="resize: none ;"></textarea>
+        <br>
+        <!-- 
+            form 태그의 데이터를 전송하는 방법 2가지
+            1) input type = "submit"
+            2) button 태그 활용
+                - form 안에서 버튼태그의 기본 역할 -> submit
+                - form 안에 버튼 기능을 만들려면 반드시 type="button"을 추가 ★
+         -->
+        <button type="button">전송</button>
+        <input type="submit" value="회원가입">
+        <input type="reset" value="전부삭제">
+
+
+
+
+    </form>
+
+
+
+    
+</body>
+</html>
