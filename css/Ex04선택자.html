@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 1. 전체선택자(*) : html의 모든 요소 */
+        *{
+            color: tomato;
+        }
+        /* 2. 요소선택자(요소명) : html내의 해당요소 */
+        h1{
+            color: blue;
+        }
+        li{
+            color: green;
+        }
+        /* 3. 클래스 선택자(.클래스명) : 특정요소 - 중복가능 */
+        .crawling{
+            background-color: black;
+        }
+        /* 4. id 선택자(#아이디명) : 특정요소 - 중복불가능 */
+        #htmlcss{
+            background-color: yellow;
+        }
+        /* python 수업을 들어온 선생님의 배경색을 보라색으로 변경! */
+        #python{
+            background-color: purple;
+        }
+
+        /* Q1. body를 기준으로 ul태그의 모든 자식요소의 글자 크기를 30px로 변경 */
+        body ul{
+            font-size: 30px;
+        }
+
+        /* Q2. li요소 중에서 class가 crawling인 요소만 이텔릭체로 변경 */
+        li.crawling{
+            font-style: italic;
+        }
+        /* Q3. 첫번째 li를 기준으로 li요소 중에서 클래스가 crawling인 요소의 글씨를 두껍게 */
+        li~li.crawling{
+            font-weight: 900;
+        }
+
+        /* Q4. class가 crawling인 li요소를 기준으로 id가 db인 요소의 글씨색을 빨강으로 변경 */
+        li.crawling~#db{
+            color: blueviolet;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <h1> 사물지능 과정</h1>
+    <ul>
+        <li id="python" class="crawling">김민수</li>
+        <p id="db">조준용</p>
+        <li id="htmlcss">임경남</li>
+        <li class="crawling">정봉균</li>
+    </ul>
+    
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 브라우저 기본 폰트 사이즈는 16px */
+        #span1{
+            font-size: 16;
+            /* 
+            px : 디스플레이에서 가장 기본이 되는 단위
+                 사용자 환경에 상관없이 고정된 값
+             */
+
+        }
+
+        p{
+            font-size: 8px
+        }
+
+        #span2{
+            /* ex) 2em : 부모의 2배 */
+            font-size: 3em;
+        }
+        #span3{
+            /*
+            rem : 문서의 폰트 ㅡ기에 다른 배수단위
+            ex) 2rem : 현재 문서 폰트 크기의 2배
+             */
+            font-size: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <span id="span1">px로 조정</span>
+    <p>
+        <span id="span2">em으로 조정</span>
+    </p>
+
+    <span id="span3">rem으로 조정</span>
+
+
+</body>
+</html>
