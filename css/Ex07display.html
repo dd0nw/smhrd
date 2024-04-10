@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p, span{
+            width: 200px;
+            height: 200px;
+        }
+
+        /* 1. display : block
+            종류 : div, p, h1 ... 등 => 기본값 block
+            무조건 가로로 한줄의 영역을 차지하는 속성
+            width, height 값 설정이 가능 */
+
+        p{
+            background-color: pink;
+            display: inline;
+        }
+
+        /* 
+        2. display : inline
+        종류 : span, a, strong .. 등 => 기본값 inline
+        내가 담은 컨텐츠까지만 영역을 차지한다.
+        width, height 값 설정이 불가능하다
+        */
+        .span1{
+            background-color: lightblue;
+            display: block;
+
+        }
+
+        .span2{
+            background-color: tomato;
+            display: inline-block;
+            /* 3. display : inline-block
+                inline + block => 컨텐츠까지만 크기를 삼지만
+                width, height 설정이 가능 */
+        }
+
+        div{
+            background-color: aquamarine;
+            display: none;
+            /* 4. display : none
+                화면에서 해당 요소를 보이지 않게 지정
+             */
+        }
+
+        /* 
+            display를 조작하는 경우
+            - 메뉴바 같이 내용이 많은 경우에 처음에는 display를 none 설정
+            - 마우스를 올렸을때(mouseover) -> display block inline 변경
+            - 화면상에 숨겼다가 눌렀을 때 보이게 만드는 효과
+        
+        */
+ 
+    </style>
+</head>
+<body>
+    <div>div</div>
+
+    <p>p태그</p>
+    <p>p태그</p>
+    <p>p태그</p>
+    <span class="span1">span태그</span>
+    <span class="span1">span태그</span>
+    <span class="span1">span태그</span>
+
+    <span class="span2">inline-block</span>
+    <span class="span2">inline-block</span>
+    <span class="span2">inline-block</span>
+
+
+
+</body>
+</html>

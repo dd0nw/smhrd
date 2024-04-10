@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응 선택자</title>
+
+    <style>
+
+        /* 
+        반응 선택자
+        : 사용자의 반응에 따라서 달라지는 선택자
+        */
+
+        h1:hover {
+            /* 1. 대상:hover - 마우스를 올렸을 때 */
+            color: yellowgreen;
+        }
+
+        p:active {
+            /* 2. 대상:active - 마우스로 태그를 클릭 했을 때 */
+            color: coral;
+        }
+
+        /*  
+        Q1. 마우스로 span 태그를 클릭했을 때 색상을 보라색으로 변경,
+            폰트 크기는 50px로 키우기
+                
+        Q2. 마우스를 올렸을 때 색상을 초록색으로 변경,
+            폰트 크기는 10px로 줄여주기
+        */
+        span:hover { /* Q2 */
+            color: green;
+            font-size: 10px;
+        }
+
+        span:active { /* Q1 */
+            color: purple;
+            font-size: 50px;
+        }
+        /* 
+        반응 선택자를 사용할 때는 순서를 지켜서 작성하자!
+        hover를 먼저 쓰고 active를 나중에 쓰기!
+        */
+
+        
+
+    </style>
+
+</head>
+<body>
+
+    <h1>오늘은 드디어 금요일!</h1>
+
+    <p>신나는 주말!</p>
+
+    <span>모현정</span>
+    
+</body>
+</html>

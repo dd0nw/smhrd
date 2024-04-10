@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+        }
+        #red{
+            background-color: red;
+            margin: 50px;
+            /* 모든 방향에 바깥여백 부여하기 */
+        }
+        #yellow{
+            background-color: yellow;
+            margin: auto;
+            /* 웹페이지 정 가운데에 위치할 수 있게 여백 부여 */
+        }
+        #green{
+            background-color: green;
+            margin-left: 100px;
+            margin-bottom: 300px;
+        }
+        #blue{
+            background-color: blue;
+            margin-top: 150px;
+            /* 
+            마진 상쇄 현상
+            두개의 block요소에서 상하 마진이 겹쳤을 경우
+            가장 큰 마진으로 결합되는 현상
+             */
+        }
+
+    </style>
+</head>
+<body>
+    <!-- #red+#yellow+#green+#blue : id값 주면서 div 4개 만들기 -->
+
+    <div id="red"></div>
+    <div id="yellow"></div>
+    <div id="green"></div>
+    <div id="blue"></div>
+
+    
+</body>
+</html>
