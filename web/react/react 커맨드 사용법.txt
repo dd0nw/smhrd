@@ -1,0 +1,10 @@
+1. 경로 이동
+cd   (cd .. 상위 경로 이동)
+      (cd 접근하고 싶은 파일명)
+2. 접근 가능 파일 확인
+ls (현재 경로에서 접근할 수 있는 파일 출력)
+3. react 프로젝트 설치
+npx create-react-app .
+4. react 프로젝트 실행
+npm start
+
